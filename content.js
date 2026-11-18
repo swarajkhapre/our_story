@@ -105,13 +105,20 @@ const STORY = {
 
   /* ---------- Short letter ---------- */
   letter: {
-    greeting: 'Dear Disha,',
+    greeting: "Dear Dishani (My Sweety),",
     paragraphs: [
-      'Three years. From two friends who met every day, to a couple on our first trip, to two people holding on to each other across all these miles.',
-      'Thank you for every ride, every call, every smile and every time you chose us. Looking back at all these pictures, one thing is clear to me: the best moments of my life have you in them.',
-      'Happy anniversary, my favourite person. Here is to the day when there is no distance left between us.'
+      "Three years.",
+      "We started as friends, and that too through mutual friends. But destiny had other plans for us.",
+      "From two friends who met every day, to two people who fell in love, to a couple on their first and most memorable trip, to two people navigating difficult phases of life, and finally to two people holding on to each other across all these miles.",
+      "Thank you for every ride, every call, every smile, and every time you chose us. Looking back at all these pictures, one thing is clear to me: the best moments of my life have you in them.",
+      "Happy anniversary, my favourite person. I wish I could be with you today, but I guess this is what life is right now. Yeh sab struggles hain, taaki ek doosre ke liye pyaar aur badhta rahe, ek doosre ki absence mehsoos ho, aur ek doosre ki importance aur zyada samajh aaye.",
+      "I know things aren’t going as smoothly as we once imagined, but I’m glad we’ve held on to each other through all the ups and downs. We’ve had our difficult days, our misunderstandings, and moments when things weren’t easy. But despite everything, we’re still here, still trying, still choosing each other.",
+      "And I hope that no matter what life throws at us, we continue to hold each other’s hands through every situation. Through the good days, the bad days, the distance, the uncertainty, and everything in between.",
+      "No matter what. ALWAYS AND FOREVER.",
+      "Here’s to all the memories we’ve made, all the lessons we’ve learnt, and all the moments that are still waiting for us. And here’s to the day when there is no distance left between us, when I can look at you, hold you close, and never have to say goodbye after a few days together.",
+      "I love you, my Sweety. ❤️"
     ],
-    signature: 'Yours, always, Atul'
+    signature: "Yours, always, Atul"
   },
 
   /* ---------- Feedback at the end ---------- */
