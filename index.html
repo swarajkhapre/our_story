@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17151b">
+  <meta name="description" content="A private little scrapbook of our story.">
+  <title>Jordan — Our Story</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Opening quiz -->
+  <div class="gate" id="gate" role="dialog" aria-modal="true">
+    <div class="gate-card" id="gate-card">
+      <span class="eyebrow" id="quiz-eyebrow"></span>
+      <div class="gate-heart">♡</div>
+      <h1 id="quiz-title"></h1>
+      <p id="quiz-subtitle"></p>
+      <form id="gate-form" autocomplete="off">
+        <label class="quiz-q" for="answer" id="quiz-question"></label>
+        <input id="answer" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" required>
+        <button type="submit"><span id="quiz-button"></span> <span>↗</span></button>
+      </form>
+      <p class="gate-error" id="gate-error" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <main id="site" class="locked">
+    <nav class="nav">
+      <a class="brand" href="#top">A + D <span>♡</span></a>
+      <div class="nav-links"><a href="#friends">Our story</a><a href="#letter">Letter</a><a href="#feedback">Your turn</a></div>
+    </nav>
+
+    <!-- 2. Batch 1 -->
+    <header class="hero" id="top">
+      <div class="hero-content">
+        <span class="eyebrow" id="hero-eyebrow"></span>
+        <figure class="polaroid" id="hero-polaroid"><img id="hero-photo" alt="Dishani as a little girl"><figcaption id="hero-caption"></figcaption></figure>
+        <h1 id="hero-title"></h1>
+        <div id="hero-lines"></div>
+        <a class="pill" href="#friends"><span id="hero-cue"></span> <span>↓</span></a>
+      </div>
+    </header>
+
+    <!-- 3. Batches 2 to 7 (built from content.js) -->
+    <div id="chapters"></div>
+
+    <!-- 4. Letter -->
+    <section class="letter-section section-pad" id="letter">
+      <div class="letter-paper">
+        <span class="eyebrow">A letter, just for you</span>
+        <h2 id="letter-greeting"></h2>
+        <div id="letter-body"></div>
+        <div class="signature"><span id="letter-signature"></span> <span class="heart">♡</span></div>
+      </div>
+    </section>
+
+    <!-- 5. Feedback -->
+    <section class="feedback-section section-pad" id="feedback">
+      <div class="section-title">
+        <span class="eyebrow" id="fb-eyebrow"></span>
+        <h2 id="fb-title"></h2>
+      </div>
+      <div class="ask-card" id="ask-card">
+        <p class="ask-q" id="fb-question"></p>
+        <div class="yn"><button class="yes" type="button">Yes</button><button class="no" type="button">No</button></div>
+      </div>
+      <form class="feedback-form hidden" id="feedback-form">
+        <label for="fb-text" id="fb-label"></label>
+        <textarea id="fb-text" rows="7"></textarea>
+        <button class="pill submit-pill" type="submit"><span id="fb-send"></span> <span>♡</span></button>
+      </form>
+      <div class="form-message" id="form-message" aria-live="polite"></div>
+    </section>
+
+    <footer><span id="footer-text"></span> <span class="heart">♡</span></footer>
+  </main>
+
+  <!-- Pop-up used for "Are you sure?" -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="gate-heart">♡</div>
+      <p class="ask-q" id="modal-q"></p>
+      <div class="yn"><button class="yes" type="button">Yes</button><button class="no" type="button">No</button></div>
+    </div>
+  </div>
+
+  <!-- Photo viewer -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">×</button>
+    <img id="lightbox-img" alt="">
+  </div>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
